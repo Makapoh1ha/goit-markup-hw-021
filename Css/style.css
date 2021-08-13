@@ -195,6 +195,7 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   background-color: #2196f3;
+  color: #ffffff;
 }
 .button-portfolio-blue:hover,
 .button-portfolio-blue:focus {
