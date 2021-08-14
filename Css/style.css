@@ -2,6 +2,13 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+:root {
+  --black: #212121;
+  --white: #ffffff;
+  --grey: #757575;
+  --blue: #2196f3;
+  --black-grey: #2f303a;
+}
 .list {
   list-style: none;
 }
@@ -15,16 +22,16 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   cursor: pointer;
-  color: #2196f3;
+  color: var(--blue);
 }
 .header-link-blue:hover,
 .header-link-blue:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 /* -----header---- */
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -35,7 +42,14 @@ body {
 }
 
 .logo-color {
-  color: #2196f3;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 2.16;
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header-link {
@@ -45,11 +59,11 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   cursor: pointer;
-  color: #212121;
+  color: var(--black);
 }
 .header-link:hover,
 .header-link:focus {
-  color: #2196f3;
+  color: var(--blue);
 }
 .mail {
   font-style: normal;
@@ -57,12 +71,12 @@ body {
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey);
   cursor: pointer;
 }
 .mail:focus,
 .mail:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 .tel {
   font-style: normal;
@@ -70,12 +84,12 @@ body {
   font-size: 14px;
   line-height: 1.19;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--grey);
   cursor: pointer;
 }
 .tel:focus,
 .tel:hover {
-  color: #2196f3;
+  color: var(--blue);
 }
 /* Main conteiner */
 .main-content {
@@ -90,7 +104,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
 }
 .button {
   font-size: 16px;
@@ -98,19 +112,19 @@ body {
   max-width: 696px;
   cursor: pointer;
   margin-left: 800px;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--white);
+  background: var(--blue);
 }
 .button:hover {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--white);
 }
 /* ----- Feature----- */
 
 .feature {
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .feature-list-title {
@@ -127,7 +141,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey);
 }
 /* ------about------ */
 .about-title {
@@ -163,18 +177,20 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey);
 }
 /* -----footer----- */
 .footer {
   background-color: #2f303a;
 }
 .footer-logo {
-  font-weight: 500;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white);
 }
 .footer-addres {
   font-style: normal;
@@ -182,9 +198,22 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white);
 }
-
+.contakt {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+.contakt:hover,
+.contakt:focus {
+  color: var(--blue);
+}
 /* -----Portfolio.html----- */
 .button-portfolio-blue {
   font-style: normal;
@@ -194,13 +223,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 .button-portfolio-blue:hover,
 .button-portfolio-blue:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 .button-portfolio {
   font-style: normal;
@@ -213,8 +242,8 @@ body {
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 /* ------ portfolio------ */
@@ -231,5 +260,5 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey);
 }
